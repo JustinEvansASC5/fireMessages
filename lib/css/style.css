@@ -10,10 +10,10 @@
 /* https://coolors.co/36151e-839791-593f62-e3b23c-edebd7 */
 
 :root {
-    --primaryDark: #36151E;
+    --primaryDark: rgb(54, 21, 21);
     --primaryLight: #EDEBD7;
-    --accent: #E3B23C;
-    --alternate: #593F62;
+    --accent: rgb(227, 60, 60);
+    --alternate: rgb(94, 94, 94);
     --addedPadding: 10px;
 }
 
@@ -90,6 +90,7 @@ input {
     border-bottom: var(--alternate) 2px solid;
     caret-color: var(--accent);
     color: var(--alternate);
+    
 }
 
 input:focus {
@@ -113,18 +114,21 @@ form {
 
 .inputContainer {
     grid-template: auto auto/auto;
+    font-family: SUPREME;
 }
 
 .singleInput {
     grid-template: auto/auto 1fr;
+    font-family: SUPREME;
 }
 
 #submitButton {
-    color: var(--primaryDark);
+    color: rgb(255,255,255;)
     background-color: var(--accent);
     font-size: 1.3em;
     transition: color 300ms ease-in, background-color 300ms ease-in;
     cursor: pointer;
+    font-family: SUPREME;
 }
 
 #submitButton:hover {
@@ -136,4 +140,17 @@ form {
     outline-style: none;
     outline-width: 2px;
     outline-color: var(--primarydark);
+}
+
+#SUPREME{
+    font-size:45;
+    color: rgb(255,255,255);
+    text-align: center;
+    font-family:SUPREME;
+    background-color: rgb(178,50,50)
+}
+
+@font-face{
+    font-family: SUPREME;
+    src: url("../../assets/CaviarDreams.ttf")
 }

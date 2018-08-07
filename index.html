@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    
     <title>fireMessage</title>
-
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD-PmlQ7kWTbTyHwwnlrY6hF5YVFIXFtoo",
+    authDomain: "firemessage-b567c.firebaseapp.com",
+    databaseURL: "https://firemessage-b567c.firebaseio.com",
+    projectId: "firemessage-b567c",
+    storageBucket: "firemessage-b567c.appspot.com",
+    messagingSenderId: "1028468136038"
+  };
+  firebase.initializeApp(config);
+</script>
     <!--Go to https://console.firebase.google.com-->
     <!--Sign in and add a project "fireMessage"-->
     <!--PASTE SNIPPET HERE-->
@@ -20,7 +32,7 @@
 <body>
 
     <!--Add your name-->
-    <h1>Bob's Messaging App</h1>
+    <h1 id = "SUPREME">SUPREME messages</h1>
 
     <!--This div will be populated with messages-->
     <div class="allMessages">
